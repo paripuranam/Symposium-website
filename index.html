@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#event" id="event-link">Event</a></li>
+            <li><a href="#registration" id="registration-link">Registration</a></li>
+        </ul>
+    </nav>
+    <img src="images/images-removebg-preview.png" alt="Description of the GIF" class="top-left-image">
+
+    <section id="home">
+        <video autoplay muted loop id="background-video">
+            <source src="videos/bg_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="letters-container">
+            <img src="images/i.png" alt="I" class="letter">
+            <img src="images/m.png" alt="M" class="letter">
+            <img src="images/p.png" alt="P" class="letter">
+            <img src="images/u.png" alt="U" class="letter">
+            <img src="images/L.png" alt="L" class="letter">
+            <img src="images/z.png" alt="Z" class="letter">
+        </div>
+        <div id="date-container">
+            <span class="date-letter"><h1>2</h1></span>
+            <span class="date-letter"><h1>8</h1></span>
+            <span class="date-letter">_</span>
+            <span class="date-letter"><h1>𝙨</h1></span>
+            <span class="date-letter"><h1>𝙚</h1></span>
+            <span class="date-letter"><h1>𝙥</h1></span>
+            <span class="date-letter">_</span>
+            <span class="date-letter"><h1>2</h1></span>
+            <span class="date-letter"><h1>𝐤</h1></span>
+            <span class="date-letter"><h1>2</h1></span>
+            <span class="date-letter"><h1>4</h1></span>
+        </div>
+
+        <div id="mech">
+            <span class="dept"><h1>DEPARTMENT</h1></span>
+            <span class="date-letter">_</span>
+            <span class="dept"><h1>OF</h1></span>
+            <span class="date-letter">_</span>
+            <span class="dept"><h1>MECHANICAL</h1></span>
+            <span class="date-letter">_</span>
+            <span class="dept"><h1>ENGINEERING</h1></span>
+        </div>
+    </section>
+
+    <!-- Modal HTML -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <div class="event-box ignitedmind" data-event="ignitedmind"><b>ɪɢɴɪᴛᴇᴅ_ᴍɪɴᴅꜱ</b></div>
+            <div class="event-box pitstop" data-event="pitstop"><b>ᴘɪᴛ_ꜱᴛᴏᴘ</b></div>
+            <div class="event-box proplez" data-event="proplez"><b>ᴘʀᴏᴘʟᴇᴢ</b></div>
+            <div class="event-box draftix" data-event="draftix"><b>ᴅʀᴀꜰᴛɪx</b></div>
+            <div class="event-box jitmachinig" data-event="jitmachinig"><b>ᴊɪᴛ_ᴍᴀᴄʜɪɴɪɴɢ</b></div>
+
+            <!-- Modals for detailed views -->
+            <div id="ignitedmind-modal" class="event-modal">
+                <div class="modal-content">
+                    <span class="close-btn" data-modal="ignitedmind-modal">&times;</span>
+                    <h2>IgnitedMind</h2>
+                    <p>Detailed information about IgnitedMind.</p>
+                    <img src="images/ignitedminds.jpg" alt="IgnitedMind" class="event-background">
+                </div>
+            </div>
+
+            <div id="pitstop-modal" class="event-modal">
+                <div class="modal-content">
+                    <span class="close-btn" data-modal="pitstop-modal">&times;</span>
+                    <h2>Pitstop</h2>
+                    <p>Detailed information about Pitstop.</p>
+                    <img src="images/386006-PC5YFS-892.jpg" alt="Pitstop" class="event-background">
+                </div>
+            </div>
+
+            <div id="proplez-modal" class="event-modal">
+                <div class="modal-content">
+                    <span class="close-btn" data-modal="proplez-modal">&times;</span>
+                    <h2>Proplez</h2>
+                    <p>Detailed information about Proplez.</p>
+                    <img src="images/proplez.jpg" alt="Proplez" class="event-background">
+                </div>
+            </div>
+
+            <div id="draftix-modal" class="event-modal">
+                <div class="modal-content">
+                    <span class="close-btn" data-modal="draftix-modal">&times;</span>
+                    <h2>Draftix</h2>
+                    <p>Detailed information about Draftix.</p>
+                    <img src="images/77047-OF6F5V-362.jpg" alt="Draftix" class="event-background">
+                </div>
+            </div>
+
+            <div id="jitmachinig-modal" class="event-modal">
+                <div class="modal-content">
+                    <span class="close-btn" data-modal="jitmachinig-modal">&times;</span>
+                    <h2>Jitmachinig</h2>
+                    <p>Detailed information about Jitmachinig.</p>
+                    <img src="images/jitmachining.jpg" alt="Jitmachinig" class="event-background">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration iframe -->
+    <div id="registration-iframe" class="iframe-container">
+        <iframe src="https://conoscenza2024.stjosephstechnology.ac.in/registration/" frameborder="0"></iframe>
+        <span class="close-btn" id="close-registration">&times;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
