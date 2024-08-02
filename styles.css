@@ -180,80 +180,8 @@ body {
     align-items: center;
 }
 /* Event boxes styles */
-.event-box-ig { 
-    background-image: url('images/ignitedminds.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 160px;
-    height: 100px;
-    margin: 38px;
-    color: #fff;
-    text-align: center;
-    line-height: 100px;
-    font-size: 22px;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
-}
-.event-box-pit {
-    background-image: url('images/pitstop.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 160px;
-    height: 100px;
-    margin: 38px;
-    color: #fff;
-    text-align: center;
-    line-height: 100px;
-    font-size: 22px;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
-}
-.event-box-pro {
-    background-image: url('images/proplez.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 160px;
-    height: 100px;
-    margin: 38px;
-    color: #fff;
-    text-align: center;
-    line-height: 100px;
-    font-size: 22px;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
-}
-.event-box-dra {
-    background-image: url('images/77047-OF6F5V-362.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 160px;
-    height: 100px;
-    margin: 38px;
-    color: #fff;
-    text-align: center;
-    line-height: 100px;
-    font-size: 22px;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
-}
-.event-box-jit {
-    background-image: url('images/jitmachining.jpg');
+/* Event boxes styles */
+.event-box-ig, .event-box-pit, .event-box-pro, .event-box-dra, .event-box-jit { 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -271,44 +199,29 @@ body {
     transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
 }
 
-.event-box-ig:hover{
-    transform: scale(1.8);
-    color: black;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+.event-box-ig {
+    background-image: url('images/ignitedminds.jpg');
 }
-.event-box-pit:hover{
-    transform: scale(1.8);
+
+.event-box-pit {
     background-image: url('images/pitstop.jpg');
-    color: black;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-.event-box-pro:hover{
-    transform: scale(1.8);
+
+.event-box-pro {
     background-image: url('images/proplez.jpg');
-    color: black;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-.event-box-dra:hover{
-    transform: scale(1.8);
+
+.event-box-dra {
     background-image: url('images/77047-OF6F5V-362.jpg');
-    color: black;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-.event-box-jit:hover{
-    transform: scale(1.8);
+
+.event-box-jit {
     background-image: url('images/jitmachining.jpg');
+}
+
+.event-box-ig:hover, .event-box-pit:hover, .event-box-pro:hover, .event-box-dra:hover, .event-box-jit:hover {
+    transform: scale(1.8);
     color: black;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 
@@ -471,3 +384,100 @@ body {
     height: auto; 
     z-index: 10; 
 }
+
+/* Existing CSS rules */
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adjust top-left image size */
+    .top-left-image {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Adjust video size */
+    #background-video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust letters container */
+    #letters-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .letter {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Adjust date container */
+    #date-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .date-letter {
+        font-size: 1.0rem;
+    }
+
+    /* Adjust department container */
+    #mech {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .dept {
+        font-size: 0.5rem;
+    }
+
+    /* Ensure the #date-container and #mech are placed under #letters-container */
+    #letters-container + #date-container,
+    #date-container + #mech {
+        margin-top: 10px; /* Add some spacing between sections */
+    }
+
+    /* Adjust modal content */
+    .modal-content {
+        width: 90%;
+        height: 30%;
+        margin: 5% auto;
+    }
+
+    /* Adjust event boxes */
+    .event-box-ig, .event-box-pit, .event-box-pro, .event-box-dra, .event-box-jit { 
+        width: 50%;
+        height: 50%;
+        margin: 2px;
+        line-height: normal;
+        font-size: 18px;
+    }
+
+    .event-box-ig:hover, .event-box-pit:hover, .event-box-pro:hover, .event-box-dra:hover, .event-box-jit:hover {
+        transform: scale(1.1);
+        color: black;
+    }
+
+    .event-box-ig, .event-box-pit, .event-box-pro, .event-box-dra, .event-box-jit {
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+    }
+    /* Adjust iframes */
+    .iframe-container {
+        width: 100%;
+        height: auto;
+    }
+    iframe {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
