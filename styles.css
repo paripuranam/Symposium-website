@@ -1,6 +1,6 @@
-/* General Styles */
+
 html {
-    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    scroll-behavior: smooth; 
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     overflow: hidden;
 }
 
-/* Navbar Styles */
+/* Navigation bar Styles */
 .navbar {
     position: absolute;
     top: 0;
@@ -66,7 +66,7 @@ body {
     z-index: -1;
     opacity: 25%;
 }
-
+/* Letters styles */
 #letters-container {
     position: absolute;
     top: 40%;
@@ -161,7 +161,6 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* background-color: rgba(0, 0, 0, 0.8); */
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(5px);
@@ -180,9 +179,84 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-.event-box {
-    background-image: black;
+/* Event boxes styles */
+.event-box-ig { 
+    background-image: url('images/ignitedminds.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+    margin: 38px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
+}
+.event-box-pit {
+    background-image: url('images/pitstop.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+    margin: 38px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
+}
+.event-box-pro {
+    background-image: url('images/proplez.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+    margin: 38px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
+}
+.event-box-dra {
+    background-image: url('images/77047-OF6F5V-362.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+    margin: 38px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
+}
+.event-box-jit {
+    background-image: url('images/jitmachining.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     display: inline-block;
     width: 160px;
     height: 100px;
@@ -197,16 +271,52 @@ body {
     transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
 }
 
-.event-box:hover {
-    transform: scale(1.4);
-    background-image: url('images/icons8-gear.gif');
+.event-box-ig:hover{
+    transform: scale(1.8);
     color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+.event-box-pit:hover{
+    transform: scale(1.8);
+    background-image: url('images/pitstop.jpg');
+    color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.event-box-pro:hover{
+    transform: scale(1.8);
+    background-image: url('images/proplez.jpg');
+    color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.event-box-dra:hover{
+    transform: scale(1.8);
+    background-image: url('images/77047-OF6F5V-362.jpg');
+    color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.event-box-jit:hover{
+    transform: scale(1.8);
+    background-image: url('images/jitmachining.jpg');
+    color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .event-name {
     font-size: 18px;
 }
 
+/* Event details Styles */
 .event-modal {
     display: none;
     position: fixed;
@@ -233,12 +343,17 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     top: 0;
     left: 0;
     z-index: -1;
     opacity: 1;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+/* close button styles */
 
 .close-btn {
     position: absolute;
@@ -253,6 +368,55 @@ body {
 
 .close-btn:hover,
 .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* About Us Section */
+/* .hidden {
+    display: none;
+} */
+#about {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 15%;
+    top: 10%;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ddd;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.about-content h2{
+    color: yellow;
+    text-align: center;
+}
+.about-content p{
+    color: rgb(251, 251, 251);
+    text-align: center;
+}
+
+.about-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.about-close-btn:hover,
+.about-close-btn:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;

@@ -2,20 +2,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const eventLink = document.getElementById("event-link");
     const registrationLink = document.getElementById("registration-link");
     const eventModal = document.getElementById("event-modal");
-    const eventBoxes = document.querySelectorAll(".event-box");
+    const eventBoxes1 = document.querySelectorAll(".event-box-ig");
+    const eventBoxes2 = document.querySelectorAll(".event-box-pit");
+    const eventBoxes3 = document.querySelectorAll(".event-box-pro");
+    const eventBoxes4 = document.querySelectorAll(".event-box-dra");
+    const eventBoxes5 = document.querySelectorAll(".event-box-jit");
     const eventModals = document.querySelectorAll(".event-modal");
     const closeBtns = document.querySelectorAll(".close-btn");
+    const aboutLink = document.getElementById('about-link');
+    const aboutcloseBtn = document.getElementById("about-close-id")
+    const aboutSection = document.getElementById('about');
     const registrationIframe = document.getElementById("registration-iframe");
     const closeRegistrationBtn = document.getElementById("close-registration");
+    const homebtn = document.getElementById('home-link');
 
     // Show main event modal
     eventLink.addEventListener("click", function (e) {
+        aboutSection.style.display = "none";
         e.preventDefault();
         eventModal.style.display = "flex";
+        registrationIframe.style.display = "none";
     });
 
     // Show registration iframe
     registrationLink.addEventListener("click", function (e) {
+        aboutSection.style.display = "none";
         e.preventDefault();
         registrationIframe.style.display = "block";
     });
@@ -26,7 +37,55 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Show specific event modal
-    eventBoxes.forEach(box => {
+    eventBoxes1.forEach(box => {
+        box.addEventListener("click", function () {
+            const eventModalId = this.getAttribute("data-event") + "-modal";
+            eventModals.forEach(modal => {
+                if (modal.id === eventModalId) {
+                    modal.style.display = "flex";
+                } else {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    });
+    eventBoxes2.forEach(box => {
+        box.addEventListener("click", function () {
+            const eventModalId = this.getAttribute("data-event") + "-modal";
+            eventModals.forEach(modal => {
+                if (modal.id === eventModalId) {
+                    modal.style.display = "flex";
+                } else {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    });
+    eventBoxes3.forEach(box => {
+        box.addEventListener("click", function () {
+            const eventModalId = this.getAttribute("data-event") + "-modal";
+            eventModals.forEach(modal => {
+                if (modal.id === eventModalId) {
+                    modal.style.display = "flex";
+                } else {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    });
+    eventBoxes4.forEach(box => {
+        box.addEventListener("click", function () {
+            const eventModalId = this.getAttribute("data-event") + "-modal";
+            eventModals.forEach(modal => {
+                if (modal.id === eventModalId) {
+                    modal.style.display = "flex";
+                } else {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    });
+    eventBoxes5.forEach(box => {
         box.addEventListener("click", function () {
             const eventModalId = this.getAttribute("data-event") + "-modal";
             eventModals.forEach(modal => {
@@ -58,4 +117,21 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    //about us
+    aboutLink.addEventListener('click', (e) => {
+        registrationIframe.style.display = "none";
+        e.preventDefault();
+        aboutSection.style.display = "flex";
+    });
+    
+    aboutcloseBtn.addEventListener("click", function () {
+        aboutSection.style.display = "none";
+    });
+
+    homebtn.addEventListener("click", function () {
+        registrationIframe.style.display = "none";
+        aboutSection.style.display = "none";
+    });
+
 });
