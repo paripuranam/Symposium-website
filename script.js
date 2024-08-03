@@ -15,10 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const registrationIframe = document.getElementById("registration-iframe");
     const closeRegistrationBtn = document.getElementById("close-registration");
     const homebtn = document.getElementById('home-link');
+    const contactlink = document.getElementById('contact-link');
+    const contactcloseBtn = document.getElementById("contact-close-id")
+    const contactSection = document.getElementById('contact');
 
     // Show main event modal
     eventLink.addEventListener("click", function (e) {
         aboutSection.style.display = "none";
+        contactSection.style.display = "none";
         e.preventDefault();
         eventModal.style.display = "flex";
         registrationIframe.style.display = "none";
@@ -27,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show registration iframe
     registrationLink.addEventListener("click", function (e) {
         aboutSection.style.display = "none";
+        contactSection.style.display = "none";
         e.preventDefault();
         registrationIframe.style.display = "block";
     });
@@ -121,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //about us
     aboutLink.addEventListener('click', (e) => {
         registrationIframe.style.display = "none";
+        contactSection.style.display = "none";
         e.preventDefault();
         aboutSection.style.display = "flex";
     });
@@ -132,6 +138,19 @@ document.addEventListener("DOMContentLoaded", function () {
     homebtn.addEventListener("click", function () {
         registrationIframe.style.display = "none";
         aboutSection.style.display = "none";
+        contactSection.style.display = "none";
+    });
+
+    //contact us
+    contactlink.addEventListener('click', (e) => {
+        registrationIframe.style.display = "none";
+        aboutSection.style.display = "none";
+        e.preventDefault();
+        contactSection.style.display = "flex";
+    });
+    
+    contactcloseBtn.addEventListener("click", function () {
+        contactSection.style.display = "none";
     });
 
 });
