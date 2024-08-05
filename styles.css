@@ -498,7 +498,7 @@ body {
 }
 
 /* Mobile specific styles */
-@media only screen  {
+@media only screen and (max-width: 480px) {
     #letters-container {
         width:15%;
         height: auto;
@@ -573,6 +573,9 @@ body {
     }
 
     /* event details */
+    .modal {
+        backdrop-filter: blur(5px);
+    }
     .event-background {
         position: absolute;
         width: 100%;
@@ -597,7 +600,7 @@ body {
         width: 90vw;
         height: 70vh;
         left: 5%;
-        top: 5%;
+        top: 10%;
         border-color: #fff;
     }
 
@@ -618,7 +621,7 @@ body {
     }
 
     .contact-left h4, .contact-center h4, .contact-right h4 {
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     .left-image, .center-image, .right-image {
