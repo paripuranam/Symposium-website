@@ -622,11 +622,12 @@ body {
 
     .contact-left h4, .contact-center h4, .contact-right h4 {
         font-size: 2vw;
+        text-align: left;
     }
 
     .left-image, .center-image, .right-image {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     /* iframe modal */
