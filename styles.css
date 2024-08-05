@@ -498,8 +498,7 @@ body {
 }
 
 /* Mobile specific styles */
-@media only screen and (max-width: 480px) {
-
+@media only screen  {
     #letters-container {
         width:15%;
         height: auto;
@@ -596,7 +595,7 @@ body {
 
     #about, #contact {
         width: 90vw;
-        height: 90vh;
+        height: 70vh;
         left: 5%;
         top: 5%;
         border-color: #fff;
@@ -619,7 +618,7 @@ body {
     }
 
     .contact-left h4, .contact-center h4, .contact-right h4 {
-        font-size: 2vw;
+        font-size: 1vw;
     }
 
     .left-image, .center-image, .right-image {
