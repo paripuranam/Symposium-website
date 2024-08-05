@@ -455,11 +455,13 @@ body {
 }
 
 .left-image {
+    padding-right: 20%;
     width: 150px; 
     height: 150px;
 }
 
 .center-image {
+    padding-right: 20%;
     width: 150px;
     height: 150px;
 }
@@ -497,14 +499,7 @@ body {
 
 /* Mobile specific styles */
 @media only screen and (max-width: 480px) {
-    #background-video {
-        top: 0; /* Adjust positioning to fit mobile screens */
-        left: 0;
-        height: 100vh; /* Set height to cover the viewport height */
-        width: 100vw; /* Ensure it covers the viewport width */
-        transform: none; /* Remove the translation effect */
-        opacity: 40%;
-    }
+
     #letters-container {
         width:15%;
         height: auto;
@@ -512,7 +507,7 @@ body {
     }
 
     .letter {
-        font-size: 5vw; /* Adjust the font size to fit the container */
+        font-size: 5vw;
     }
 
     #date-container {
@@ -520,7 +515,7 @@ body {
     }
 
     .date-letter {
-        font-size: 4vw; /* Adjust the font size to fit the container */
+        font-size: 4vw; 
     }
 
     #mech {
@@ -528,7 +523,7 @@ body {
     }
 
     .dept {
-        font-size: 2.7vw; /* Adjust the font size to fit the container */
+        font-size: 2.7vw; 
     }
 
     .navbar {
@@ -541,14 +536,14 @@ body {
 
     .navbar ul li a {
         padding: 5px 10px;
-        font-size: 3vw; /* Adjust the font size for mobile */
+        font-size: 3vw; 
     }
 
     .event-box-ig, .event-box-pit, .event-box-pro, .event-box-dra, .event-box-jit {
         width: 100px;
         height: 60px;
         margin: 10px;
-        background-size: cover; /* Ensures the image covers the entire box */
+        background-size: cover; 
         background-position: center;
     }
 
@@ -598,72 +593,38 @@ body {
         max-height: 80vh; 
         padding: 10px; 
     }
+
     #about, #contact {
         width: 90vw;
         height: 90vh;
         left: 5%;
         top: 5%;
+        border-color: #fff;
     }
 
     /* Adjust Contact Us sections to be vertical */
-    #contact {
-        left: 5%;
-        top: 10%;
-        width: 90vw; /* Adjust width to fit better on mobile screens */
-        height: auto; /* Allow height to adjust based on content */
-        padding: 15px; /* Add padding for better spacing */
-        box-shadow: none; /* Remove shadow if not needed */
-        overflow: visible; /* Allow content to be visible without scrolling */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    /* Contact sections layout */
     .contact-sections {
-        grid-template-columns: 1fr; /* Stack columns vertically */
-        gap: 10px; /* Reduce gap between sections */
+        /* display:grid;
+        flex-direction:column; */
+        align-items: center; 
     }
 
-    /* Each contact section */
     .contact-left, .contact-center, .contact-right {
-        width: 100%; /* Ensure each section takes full width */
-        text-align: center; /* Center-align text for better readability */
-        margin-bottom: 15px; /* Add spacing between sections */
+        width: 55px;
+        padding-left: 20%;
     }
 
     .contact-left h3, .contact-center h3, .contact-right h3 {
-        font-size: 16px; /* Adjust font size for mobile */
+        font-size: 3vw;
     }
 
     .contact-left h4, .contact-center h4, .contact-right h4 {
-        font-size: 14px; /* Adjust font size for mobile */
-    }
-
-    .contact-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px; /* Add margin at the bottom */
-    }
-
-    /* Image row container */
-    .contact-images {
-        display: flex;
-        justify-content: space-around; /* Space images evenly */
-        width: 100%; /* Ensure it spans the full width */
+        font-size: 2vw;
     }
 
     .left-image, .center-image, .right-image {
-        width: 80px; /* Adjust image size for mobile */
-        height: 80px; /* Adjust image size for mobile */
-    }
-
-    /* Close button for contact us */
-    .contact-close-btn {
-        top: 5px; /* Adjust top position */
-        right: 10px; /* Adjust right position */
-        font-size: 24px; /* Reduce font size for mobile */
+        width: 50px;
+        height: 50px;
     }
 
     /* iframe modal */
