@@ -573,9 +573,6 @@ body {
     }
 
     /* event details */
-    .modal {
-        backdrop-filter: blur(5px);
-    }
     .event-background {
         position: absolute;
         width: 100%;
@@ -591,7 +588,7 @@ body {
 
     .event-modal .modal-content {
         width: 100vw; 
-        height: 40vh; 
+        height: 30vh; 
         max-height: 80vh; 
         padding: 10px; 
     }
@@ -606,8 +603,6 @@ body {
 
     /* Adjust Contact Us sections to be vertical */
     .contact-sections {
-        /* display:grid;
-        flex-direction:column; */
         align-items: center; 
     }
 
@@ -622,12 +617,12 @@ body {
 
     .contact-left h4, .contact-center h4, .contact-right h4 {
         font-size: 2vw;
-        text-align: left;
+        text-align: center;
     }
 
     .left-image, .center-image, .right-image {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
     }
 
     /* iframe modal */
