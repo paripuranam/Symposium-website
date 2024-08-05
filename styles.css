@@ -497,9 +497,18 @@ body {
 
 /* Mobile specific styles */
 @media only screen and (max-width: 480px) {
+    #background-video {
+        top: 0; /* Adjust positioning to fit mobile screens */
+        left: 0;
+        height: 100vh; /* Set height to cover the viewport height */
+        width: 100vw; /* Ensure it covers the viewport width */
+        transform: none; /* Remove the translation effect */
+        opacity: 40%;
+    }
     #letters-container {
         width:15%;
         height: auto;
+        top: 45%;
     }
 
     .letter {
@@ -507,7 +516,7 @@ body {
     }
 
     #date-container {
-        top: 60%;
+        top: 54%;
     }
 
     .date-letter {
@@ -515,7 +524,7 @@ body {
     }
 
     #mech {
-        top: 65%;
+        top: 60%;
     }
 
     .dept {
@@ -597,28 +606,64 @@ body {
     }
 
     /* Adjust Contact Us sections to be vertical */
-    .contact-sections {
+    #contact {
+        left: 5%;
+        top: 10%;
+        width: 90vw; /* Adjust width to fit better on mobile screens */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 15px; /* Add padding for better spacing */
+        box-shadow: none; /* Remove shadow if not needed */
+        overflow: visible; /* Allow content to be visible without scrolling */
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
     }
 
+    /* Contact sections layout */
+    .contact-sections {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+        gap: 10px; /* Reduce gap between sections */
+    }
+
+    /* Each contact section */
     .contact-left, .contact-center, .contact-right {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 100%; /* Ensure each section takes full width */
+        text-align: center; /* Center-align text for better readability */
+        margin-bottom: 15px; /* Add spacing between sections */
     }
 
     .contact-left h3, .contact-center h3, .contact-right h3 {
-        font-size: 5vw;
+        font-size: 16px; /* Adjust font size for mobile */
     }
 
     .contact-left h4, .contact-center h4, .contact-right h4 {
-        font-size: 4vw;
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+
+    /* Image row container */
+    .contact-images {
+        display: flex;
+        justify-content: space-around; /* Space images evenly */
+        width: 100%; /* Ensure it spans the full width */
     }
 
     .left-image, .center-image, .right-image {
-        width: 100px;
-        height: 100px;
+        width: 80px; /* Adjust image size for mobile */
+        height: 80px; /* Adjust image size for mobile */
+    }
+
+    /* Close button for contact us */
+    .contact-close-btn {
+        top: 5px; /* Adjust top position */
+        right: 10px; /* Adjust right position */
+        font-size: 24px; /* Reduce font size for mobile */
     }
 
     /* iframe modal */
