@@ -497,7 +497,7 @@ body {
 }
 
 /* Mobile specific styles */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
     #letters-container {
         width:15%;
         height: auto;
@@ -619,11 +619,14 @@ body {
         text-align: center;
     }
 
-    .left-image, .center-image, .right-image {
+    .left-image, .center-image {
         width: 55px;
         height: 55px;
     }
-
+    .right-image{
+        height: 55px;
+        width: 50px;
+    }
     /* iframe modal */
     .iframe-container {
         width: 98vw;
