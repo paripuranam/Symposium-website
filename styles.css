@@ -96,6 +96,8 @@ body {
     opacity: 0;
     transform: translateY(100px);
     animation: slide-up 1s forwards;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 #mech {
@@ -104,7 +106,7 @@ body {
     top: 74%;
     left: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: grid;
     align-items: center;
     transform: translate(-50%, -50%); 
 }
@@ -115,6 +117,8 @@ body {
     opacity: 0;
     transform: translateY(100px);
     animation: slide-up 1s forwards;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .letter:nth-child(1) { animation-delay: 0.2s; }
@@ -127,17 +131,11 @@ body {
 .date-letter:nth-child(1) { animation-delay: 1.1s; }
 .date-letter:nth-child(2) { animation-delay: 1.2s; }
 .date-letter:nth-child(3) { animation-delay: 1.2s; }
-.date-letter:nth-child(4) { animation-delay: 1.3s; }
-.date-letter:nth-child(5) { animation-delay: 1.3s; }
-.date-letter:nth-child(6) { animation-delay: 1.4s; }
-.date-letter:nth-child(7) { animation-delay: 1.4s; }
-.date-letter:nth-child(8) { animation-delay: 1.5s; }
-.date-letter:nth-child(9) { animation-delay: 1.5s; }
 
-.dept:nth-child(1) { animation-delay: 1.5s; }
-.dept:nth-child(2) { animation-delay: 1.5s; }
-.dept:nth-child(3) { animation-delay: 1.6s; }
-.dept:nth-child(4) { animation-delay: 1.6s; }
+.dept:nth-child(1) { animation-delay: 1.3s; }
+.dept:nth-child(2) { animation-delay: 1.3s; }
+.dept:nth-child(3) { animation-delay: 1.4s; }
+.dept:nth-child(4) { animation-delay: 1.4s; }
 
 @keyframes slide-up {
     to {
@@ -202,7 +200,7 @@ body {
 }
 
 .event-box-pro {
-    background-image: url('images/proplez.jpg');
+    background-image: url('images/propelz.jpg');
 }
 
 .event-box-dra {
@@ -300,6 +298,7 @@ body {
     object-fit: cover;
     z-index: -1; 
 }
+
 
 .about-content h2 {
     color: yellow;
@@ -467,7 +466,7 @@ body {
 }
 
 .right-image {
-    width: 150px; 
+    width: 130px; 
     height: 150px;
 }
 
@@ -522,7 +521,7 @@ body {
     }
 
     .dept {
-        font-size: 2.7vw; 
+        font-size: 2.6vw; 
     }
 
     .navbar {
@@ -588,7 +587,7 @@ body {
 
     .event-modal .modal-content {
         width: 100vw; 
-        height: 30vh; 
+        height: 25vh; 
         max-height: 80vh; 
         padding: 10px; 
     }

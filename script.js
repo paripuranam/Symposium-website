@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const eventLink = document.getElementById("event-link");
-    const registrationLink = document.getElementById("registration-link");
     const eventModal = document.getElementById("event-modal");
     const eventBoxes1 = document.querySelectorAll(".event-box-ig");
     const eventBoxes2 = document.querySelectorAll(".event-box-pit");
@@ -12,8 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const aboutLink = document.getElementById('about-link');
     const aboutcloseBtn = document.getElementById("about-close-id")
     const aboutSection = document.getElementById('about');
-    const registrationIframe = document.getElementById("registration-iframe");
-    const closeRegistrationBtn = document.getElementById("close-registration");
     const homebtn = document.getElementById('home-link');
     const contactlink = document.getElementById('contact-link');
     const contactcloseBtn = document.getElementById("contact-close-id")
@@ -25,21 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
         contactSection.style.display = "none";
         e.preventDefault();
         eventModal.style.display = "flex";
-        registrationIframe.style.display = "none";
     });
 
-    // Show registration iframe
-    registrationLink.addEventListener("click", function (e) {
-        aboutSection.style.display = "none";
-        contactSection.style.display = "none";
-        e.preventDefault();
-        registrationIframe.style.display = "block";
-    });
-
-    // Close registration iframe
-    closeRegistrationBtn.addEventListener("click", function () {
-        registrationIframe.style.display = "none";
-    });
+   
 
     // Show specific event modal
     eventBoxes1.forEach(box => {
@@ -125,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //about us
     aboutLink.addEventListener('click', (e) => {
-        registrationIframe.style.display = "none";
         contactSection.style.display = "none";
         e.preventDefault();
         aboutSection.style.display = "flex";
@@ -136,14 +120,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     homebtn.addEventListener("click", function () {
-        registrationIframe.style.display = "none";
         aboutSection.style.display = "none";
         contactSection.style.display = "none";
     });
 
     //contact us
     contactlink.addEventListener('click', (e) => {
-        registrationIframe.style.display = "none";
         aboutSection.style.display = "none";
         e.preventDefault();
         contactSection.style.display = "flex";
